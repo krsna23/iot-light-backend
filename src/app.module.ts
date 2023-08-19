@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { SerialModule } from './serial/serial.module';
 
 
+
 @Module({
   imports: [SerialModule, TypeOrmModule.forRoot({
     type: 'sqlite',
