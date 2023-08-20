@@ -33,6 +33,7 @@ export class SerialService {
   
       this.serialPort.on('data', (data: Buffer)=>{
           const message = data.toString();
+          console.log("Message of IoT:",message);
           const [sensorId, status] = message.split(',');
   
           const lightData = new LightData();
@@ -42,7 +43,7 @@ export class SerialService {
   
           console.log("light data from service setup:", lightData);
   
-          this.repo.save(lightData);
+          // this.repo.save(lightData);
       })
   }
     
