@@ -12,7 +12,7 @@ import { SerialModule } from './serial/serial.module';
   imports: [SerialModule, TypeOrmModule.forRoot({
     type: 'sqlite',
     database: 'db.sqlite',
-    entities: [],
+    entities: [LightData],
     synchronize: true
   }),
   TypeOrmModule.forFeature([LightData])

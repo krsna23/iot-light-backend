@@ -1,0 +1,16 @@
+### Get data from the db:
+
+GET http://localhost:3000/arduino
+
+
+### POST data to the arduino
+
+POST http://localhost:3000/write
+Content-Type: application/json
+
+{
+  "id": 3,
+  "timestamp": "12:24",
+  "sensorId": "23",
+  "status": "motion"
+}

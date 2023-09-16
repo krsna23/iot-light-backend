@@ -7,7 +7,7 @@ export class LightData {
   id: number;
 
   @Column()
-  timestamp: Date;
+  timestamp: String;
 
   @Column()
   sensorId: string;
