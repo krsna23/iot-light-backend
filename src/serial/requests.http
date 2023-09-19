@@ -9,8 +9,8 @@ POST http://localhost:3000/write
 Content-Type: application/json
 
 {
-  "id": 3,
-  "timestamp": "12:24",
-  "sensorId": "23",
-  "status": "motion"
+  "id": 15,
+  "timestamp": "9:24",
+  "sensorId": "12",
+  "status": "nomotion"
 }

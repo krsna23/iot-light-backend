@@ -20,7 +20,7 @@ export class SerialController {
     //     return 'Data sent to arduino';
     // }
 
-    @Get()
+    @Get('/all')
     getData():any {
         console.log("Request received for all data.")
         return this.serialService.getData();

@@ -6,7 +6,6 @@ import { Repository } from 'typeorm';
 import { LightData } from './serial.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Observable, Observer } from 'rxjs';
-
 import * as moment from 'moment-timezone';
 
 interface iotData {
@@ -80,7 +79,7 @@ export class SerialService {
   }
     
   getMotion(){
-    return this.repo.find();
+    return this.repo.find({where: {status: "motion"}});
   }
 
   getData(){
